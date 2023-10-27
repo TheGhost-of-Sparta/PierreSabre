@@ -1,7 +1,7 @@
 package personnages;
 
 public class Humain {
-	private int argent;
+	protected int argent;
 	private String nom;
 	private String boissonPrefere;
 	
@@ -23,7 +23,7 @@ public class Humain {
 		System.out.println("("+nom+") -"+text);
 	}
 	
-	private String getBoissonPrefere() {
+	public String getBoissonPrefere() {
 		return boissonPrefere;
 	}
 
