@@ -12,8 +12,27 @@ public class Yakuza extends Humain{
 	public void extorquer(Commerçant victime) {
 		int argentvole=victime.seFaireExtorquer();
 		argent+=argentvole;
-		reputation+=1;
+		reputation = getReputation() + 1;
 		parler("J’ai piqué les" + argentvole + " sous de Marco, ce qui me fait" + argent + " sous dans ma poche. Hi ! Hi !");
 	}
+
+	public int getReputation() {
+		return reputation;
+	}
+
+	public int perdre() {
+		int argentperdu = argent;
+		argent=0;
+		reputation-=1;
+		parler("J'ai perdu mes " + argentperdu + " sous, j'ai déshonnoré le clan " + clan);
+		return argentperdu;
+	}
+
+	public void gagner(int argentgagne) {
+		argent+=argentgagne;
+		reputation+=1;
+		parler("J'ai gagner les yakuza gagnent toujours. Je l'ai dépouillé de " + argentgagne + " sous");
+	}
+	
 	
 }

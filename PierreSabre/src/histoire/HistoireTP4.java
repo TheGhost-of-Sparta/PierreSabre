@@ -29,6 +29,8 @@ public class HistoireTP4 {
 		Ronin roro = new Ronin(60, "Roro", "Shochu");
 		roro.parler("Bonjour ! Je m'appelle" + roro.getNom() + "et j'aime boire du " + roro.getBoissonPrefere());
 		roro.donner(commercant);
+		roro.parler("Je t'ai retrouvé vermine tu vas payer.");
+		roro.provoquer(Yaku);
 		
 		
 
