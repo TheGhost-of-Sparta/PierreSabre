@@ -34,5 +34,10 @@ public class Yakuza extends Humain{
 		parler("J'ai gagner les yakuza gagnent toujours. Je l'ai dépouillé de " + argentgagne + " sous");
 	}
 	
+	@Override
+	public void direBonjour() {
+		parler( "Bonjour je m'appelle " + nom + " et j'aime boire du " + boissonPrefere + ". Mon clan est celui de " + clan);
+	}
+	
 	
 }
